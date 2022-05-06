@@ -1,3 +1,3 @@
-# BootsrapSelf
+# Web technigues
 
-Bootstrap training
+

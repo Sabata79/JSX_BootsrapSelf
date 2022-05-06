@@ -21,29 +21,29 @@
     <!--Navbar start-->
     <nav class="nav">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#header">1.</a><br><br>
-          <a class="navbar-brand" href="#pageTwo">2.</a><br><br>
-          <a class="navbar-brand" href="#pageThree">3.</a><br>
+          <a class="navbar-brand" href="#header">Home</a><br><br>
+          <a class="navbar-brand" href="#pageTwo">#2page</a><br><br>
+          <a class="navbar-brand" href="#pageThree">#3page</a><br><br>
+          <a class="navbar-brand" href="#mySelf">Me<img src="images/stickman-310589_640.png" id="stick"></i></a>         
         </div>
       </nav>
-      <!--Navbar end-->
+    <!--Navbar end-->
+
 <div id="header">
-    <img><h1>La Vida Es Chula</h1>
-<div class="container">    
-    <div class="row">
-        <div class="col-2" id="firstTxt">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta doloribus vel necessitatibus suscipit a, ratione sapiente labore architecto officiis porro ad, repellat in quae praesentium. Reprehenderit itaque magnam cum deleniti.</p> 
-        </div>
-        <div class="col-10">
-            <span></span>
+    <h1>La Vida Es Chula</h1>
+    <p>[Life is sweet]</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-6" id="borders">
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse explicabo laudantium sed eaque, unde, et sint voluptas nostrum voluptates, molestiae libero nobis! Aliquam eius quo laborum nam quos voluptate nesciunt.</p>
+            </div>
         </div>
     </div>
-</div>
 </div>
 <div id="pageTwo">
     <div class="container">    
         <div class="row">
-            <div class="col-2" id="firstTxt">
+            <div class="col-2" id="borders">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cupiditate quos porro illo praesentium ipsa error quod facilis quas nihil culpa, nisi ad obcaecati, alias quae incidunt iure, suscipit nulla?</p>
             </div>
             <div class="col-10">
@@ -51,20 +51,40 @@
             </div>
         </div>
     </div>
-    </div>
 </div>
 <div id="pageThree">
-    <div class="container">
+    <div class="container">    
         <div class="row">
-            <div class="col-6" id="firstTxt">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptates perferendis totam repellendus nobis! Dicta facere saepe voluptatibus repellat, incidunt, fuga vero provident, a delectus minus inventore impedit voluptas obcaecati.</h2>
+            <div class="col-2" id="borders">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cupiditate quos porro illo praesentium ipsa error quod facilis quas nihil culpa, nisi ad obcaecati, alias quae incidunt iure, suscipit nulla?</p>
             </div>
-            <div class="col-6">
+            <div class="col-10">
                 <span></span>
             </div>
         </div>
     </div>
 </div>
+<div id="pageFour">
+    <div id="cardPosition">
+      <div class="card" id="mySelf" style="width: 35rem; ">
+        <img src="images/MeAndI.JPG" class="card-img-top" alt="MeAndI picture">
+        <div class="card-body">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header " id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> About Me </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!--Bootsrap script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    

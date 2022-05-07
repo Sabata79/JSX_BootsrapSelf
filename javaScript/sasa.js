@@ -289,17 +289,3 @@ function finalScreen() {
    }
 }
 
-/** 
-*
-* Footer slide from w3schools
-*/
-let prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("footer").style.bottom = "0";
-  } else {
-    document.getElementById("footer").style.bottom = "-70px";
-  }
-  prevScrollpos = currentScrollPos;
-}

@@ -1,6 +1,7 @@
 /*
  * Student name :Sasa Mora Roca
  * Started date :30.3.2022
+ * 8.5.2022 Changed document.getElementById to queryselector 
  */
 // Object array for plants
 const PLANT = [
@@ -129,20 +130,20 @@ function a01() {
    grow += 10 ;
 
    //Shows these      
-   document.getElementById("first").style.display = "inline-block";
-   document.getElementById("second").style.display = "inline-block";
-   document.getElementById("third").style.display = "inline-block";
+   document.querySelector("#first").style.display = "inline-block";
+   document.querySelector("#second").style.display = "inline-block";
+   document.querySelector("#third").style.display = "inline-block";
    
    if (count <= 9 ) {
 
       //adds progressbar length and count per question
-      document.getElementById("counter").innerHTML = progresCount + "/10";   
-      document.getElementById("counter").style.width = grow + "%";
+      document.querySelector("#counter").innerHTML = progresCount + "/10";   
+      document.querySelector("#counter").style.width = grow + "%";
       
       //question and images
-      document.getElementById("text").innerHTML = PLANT[index].question ;   
-      document.getElementById("picture").innerHTML = PLANT[index].image ;
-      document.getElementById("start").style.display ="none";
+      document.querySelector("#text").innerHTML = PLANT[index].question ;   
+      document.querySelector("#picture").innerHTML = PLANT[index].image ;
+      document.querySelector("#start").style.display ="none";
       
       const THEANSWER = [
          PLANT[index].answer1 ,
@@ -173,51 +174,51 @@ function a01() {
 
 let correct = 0;
 
-let firstBtn = document.getElementById("first");
-let secondBtn = document.getElementById("second");
-let thirdBtn = document.getElementById("third");
+let firstBtn = document.querySelector("#first");
+let secondBtn = document.querySelector("#second");
+let thirdBtn = document.querySelector("#third");
 
 /** Function 
  * enables/disables buttons
  * 
 */
 function submitFirst() {
-   document.getElementById("start").disabled = false;
-   document.getElementById("submit").style.display = "inline-block";
-   document.getElementById("submit").innerHTML = "Olen varma vastauksesta!"   
+   document.querySelector("#start").disabled = false;
+   document.querySelector("#submit").style.display = "inline-block";
+   document.querySelector("#submit").innerHTML = "Olen varma vastauksesta!"   
 
    // records clicks userAnswer
-   firstBtn = document.getElementById("first");
-   secondBtn = document.getElementById("second");
-   thirdBtn = document.getElementById("third");
+   firstBtn = document.querySelector("#first");
+   secondBtn = document.querySelector("#second");
+   thirdBtn = document.querySelector("#third");
    
-   userAnswer = document.getElementById("first").innerHTML;
+   userAnswer = document.querySelector("#first").innerHTML;
 }
 
 function submitSecond() {
-   document.getElementById("start").disabled = false;
-   document.getElementById("submit").style.display = "inline-block";
-   document.getElementById("submit").innerHTML = "Olen varma vastauksesta!"   
+   document.querySelector("#start").disabled = false;
+   document.querySelector("#submit").style.display = "inline-block";
+   document.querySelector("#submit").innerHTML = "Olen varma vastauksesta!"   
    
       // records clicks userAnswer
-      firstBtn = document.getElementById("first");
-      secondBtn = document.getElementById("second");
-      thirdBtn = document.getElementById("third");
+      firstBtn = document.querySelector("#first");
+      secondBtn = document.querySelector("#second");
+      thirdBtn = document.querySelector("#third");
       
-      userAnswer = document.getElementById("second").innerHTML;
+      userAnswer = document.querySelector("#second").innerHTML;
 }
 
 function submitThird() {
-   document.getElementById("start").disabled = false;
-   document.getElementById("submit").style.display = "inline-block";
-   document.getElementById("submit").innerHTML = "Olen varma vastauksesta!"   
+   document.querySelector("#start").disabled = false;
+   document.querySelector("#submit").style.display = "inline-block";
+   document.querySelector("#submit").innerHTML = "Olen varma vastauksesta!"   
       
       // records clicks userAnswer
-      firstBtn = document.getElementById("first");
-      secondBtn = document.getElementById("second");
-      thirdBtn = document.getElementById("third");
+      firstBtn = document.querySelector("#first");
+      secondBtn = document.querySelector("#second");
+      thirdBtn = document.querySelector("#third");
          
-      userAnswer = document.getElementById("third").innerHTML;
+      userAnswer = document.querySelector("#third").innerHTML;
 }
 
 function a02() {
@@ -239,53 +240,53 @@ function a02() {
 */  
 function finalScreen() {
    //Hides these
-   document.getElementById("submit").style = "hidden";
-   document.getElementById("text").innerHTML = "";
-   document.getElementById("first").style = "hidden";
-   document.getElementById("second").style = "hidden";
-   document.getElementById("third").style = "hidden";
-   document.getElementById("picture").innerHTML = "";  
-   document.getElementById("counter").innerHTML = "";
+   document.querySelector("#submit").style = "hidden";
+   document.querySelector("#text").innerHTML = "";
+   document.querySelector("#first").style = "hidden";
+   document.querySelector("#second").style = "hidden";
+   document.querySelector("#third").style = "hidden";
+   document.querySelector("#picture").innerHTML = "";  
+   document.querySelector("#counter").innerHTML = "";
    
    //Shows these
-   document.getElementById("containerFinal").style.display = "inline-block";
-   document.getElementById("scoreImage").style.display = "inline-block";
-   document.getElementById("restart").style.display = "inline-block";
-   document.getElementById("restart").innerHTML = "Uudestaan"
-   document.getElementById("starContainer").style.display = "inline-block"
+   document.querySelector("#containerFinal").style.display = "inline-block";
+   document.querySelector("#scoreImage").style.display = "inline-block";
+   document.querySelector("#restart").style.display = "inline-block";
+   document.querySelector("#restart").innerHTML = "Uudestaan"
+   document.querySelector("#starContainer").style.display = "inline-block"
    
    // correct & shows score rating stars 
-   document.getElementById("result").innerHTML = correct + " / 10";
+   document.querySelector("#result").innerHTML = correct + " / 10";
 
    if (correct == 0) {
-      document.getElementById("result").style.display = "none";
-      document.getElementById("scoreImage").style.display = "none";
-      document.getElementById("mistake").style.display = "inline-block"
+      document.querySelector("#result").style.display = "none";
+      document.querySelector("#scoreImage").style.display = "none";
+      document.querySelector("#mistake").style.display = "inline-block"
    }
    else if (correct > 0 && correct <= 2) {
-      document.getElementById("oneStar").style.color = "orange";
+      document.querySelector("#oneStar").style.color = "orange";
    }
    else if(correct > 2 && correct <= 4) {
-      document.getElementById("oneStar").style.color = "orange";
-      document.getElementById("twoStar").style.color = "orange";
+      document.querySelector("#oneStar").style.color = "orange";
+      document.querySelector("#twoStar").style.color = "orange";
    }
    else if(correct > 4 && correct <= 6) {
-      document.getElementById("oneStar").style.color = "orange";
-      document.getElementById("twoStar").style.color = "orange";
-      document.getElementById("threeStar").style.color = "orange";
+      document.querySelector("#oneStar").style.color = "orange";
+      document.querySelector("#twoStar").style.color = "orange";
+      document.querySelector("#threeStar").style.color = "orange";
    }
    else if (correct > 6 && correct <= 9) {
-      document.getElementById("oneStar").style.color = "orange";
-      document.getElementById("twoStar").style.color = "orange";
-      document.getElementById("threeStar").style.color = "orange";
-      document.getElementById("fourStar").style.color = "orange";
+      document.querySelector("#oneStar").style.color = "orange";
+      document.querySelector("#twoStar").style.color = "orange";
+      document.querySelector("#threeStar").style.color = "orange";
+      document.querySelector("#fourStar").style.color = "orange";
    }
    else{      
-      document.getElementById("oneStar").style.color = "orange";
-      document.getElementById("twoStar").style.color = "orange";
-      document.getElementById("threeStar").style.color = "orange";
-      document.getElementById("fourStar").style.color = "orange";
-      document.getElementById("fiveStar").style.color = "orange"; 
+      document.querySelector("#oneStar").style.color = "orange";
+      document.querySelector("#twoStar").style.color = "orange";
+      document.querySelector("#threeStar").style.color = "orange";
+      document.querySelector("#fourStar").style.color = "orange";
+      document.querySelector("#fiveStar").style.color = "orange"; 
    }
 }
 

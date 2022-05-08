@@ -49,8 +49,7 @@
 }
 
 #start {    
-    max-width: 350px;
-    
+    max-width: 350px;  
     padding: 5px 5px;
     font-size: 1.2em;
     font-weight: 900;
@@ -61,6 +60,7 @@
     color: black; 
     border: none;
     border-radius: 15px;
+    background-color: #cfe694;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #start:hover {
@@ -160,25 +160,6 @@
 #starContainer{
     display: none;
    
-}
-/* ETUSIVUN MUOTOILU */
-#navbar {
-    background-color: #CFE694 !important;
-    border-bottom: 1px solid gray;
-}
-footer {
-    font-family: 'Raleway', sans-serif;
-    position: fixed;   
-    text-align: center;
-    left: 0px;
-    width: 100%;
-    bottom: 0px;
-    padding: 3px;
-    background-color: #CFE694;
-    border-top: 1px solid gray;
-    color: black;
-    display: block;
-    transition: bottom 0.6s;
 }
 #mistake {
     display: none;

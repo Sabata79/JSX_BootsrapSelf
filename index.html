@@ -19,21 +19,27 @@
     <title>MeMyselfAndI</title>
 </head>
 <body>
-    
-<!--sideNav start-->
-    <nav class="nav">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#header">Home</a><br><br>
-          <a class="navbar-brand" href="#pageTwo">Quiz</a><br><br>
-          <a class="navbar-brand" href="#pageThree">Me<img src="images/stickman-310589_640.png" id="stick"></i></a>         
-        </div>
-      </nav>
+<!--Nav start-->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a id="header" class="navbar-brand">
+      <h1>La Vida es Chula</h1>
+      <p>[life is sweet]</p>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#pageOne">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pageTwo">Quiz</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pageThree">Me</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 <!--sideNavbar end-->
 
 <!--First page-->
-<div class="container" id="header">
-  <h1>La Vida Es Chula</h1>
-  <p>[Life is sweet]</p>
+<div id="pageOne" class="container">
     <div class="row">
       <div class="col" id="imageContainer">
         <img src="images/cloud.png" alt="clud" class="float-left" id="cloud">
@@ -51,12 +57,13 @@
           boring moments. Just <button id="clickOnMe">click on me</button> to get new ideas."
         </p>
       </div>
-      <div class="col-1">
+      <div class="col-2">
         <span></span>
       </div>
     </div>
   </div>
 </div>
+
 <!--Second page-->
 <div id="pageTwo">
   <game class="game">
@@ -139,8 +146,22 @@
     </div>
   </div>
 </div>
+<footer id="footer">
+  <i class="fa-brands fa-linkedin fa-3x"></i>     
+</footer>
+
+
+
+
    
     <!--Bootsrap script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
 </body>
 </html>
+
+
+
+
+<!--  <div id="contact">
+  
+</div>-->

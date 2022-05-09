@@ -7,3 +7,5 @@ fetch("https://www.boredapi.com/api/activity")
 }
 let button = document.querySelector("#clickOnMe");
 button.onclick = getRest;
+
+

@@ -137,8 +137,7 @@ body {
 .nabar li a{
     z-index: 2;
 }
-footer {
-    position: fixed;   
+footer {     
     text-align: center;
     left: 0px;
     width: 100%;

@@ -32,7 +32,7 @@ body {
 }
 
 /* ~~~~~~~~~~~~ First page ~~~~~~~~~~~~ */
-#header h1 {
+#header {
   top: 0;
   left: 0;
   font-family: 'Amatic SC', cursive;
@@ -46,9 +46,9 @@ body {
   font-weight: 900;
 }
 
-#header p:nth-child(2) {
+#header p {
   position: fixed;
-  font-size: smaller;
+  font-size: 0.6em;
   font-weight: 900;
   margin-left: 120px;
 }
@@ -203,7 +203,15 @@ body {
   opacity: 0.7;
 }
 
-#submit:active {
+#submit:hover {
+  background-color: #cfe694;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+#submit:hover:active {
   background-color: #ff0000;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -228,7 +236,7 @@ body {
   opacity: 0.7;
 }
 
-#first:active, #second:active, #third:active {
+#first:hover, #second:hover, #third:hover {
   background-color: #cfe694;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -299,6 +307,10 @@ body {
 
 #starContainer {
   display: none;
+  margin-top: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #mistake {

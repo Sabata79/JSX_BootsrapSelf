@@ -253,7 +253,7 @@ function finalScreen() {
    document.querySelector("#scoreImage").style.display = "inline-block";
    document.querySelector("#restart").style.display = "inline-block";
    document.querySelector("#restart").innerHTML = "Uudestaan"
-   document.querySelector("#starContainer").style.display = "inline-block"
+   document.querySelector("#starContainer").style.display = "flex"
    
    // correct & shows score rating stars 
    document.querySelector("#result").innerHTML = correct + " / 10";

@@ -4,24 +4,22 @@ body {
     background-image: url(../images/bigBground.jpg);
     justify-content: center;
 }
-.nav , .nav a{
-    text-align: center;
-    width: 100px;
-    font-family: 'Amatic SC', cursive;
-    text-decoration: none;
-    color: black;
-    font-size: 1.5em;
+.navbar {
     position: fixed;
-    margin-top: 200px;
-    margin-right: 10px;
-    margin-left: 10px;
-    right: 0;
-    z-index: 2;    
-}
-.nav a:hover {
-    width: 130px;
-    height: 130px;
-    color: red; 
+    width: 100%;
+    font-family: 'Amatic SC', cursive;
+    background-color: #f2e68f !important;
+    z-index: 1;
+        li {
+        text-align: right;
+        margin-left: 5px;
+        font-family: 'Amatic SC', cursive;
+        font-size: 1.6em;
+        font-weight: 900;
+            a{
+            z-index: 2;
+        }
+    }
 }
 #header  h1{
     top: 0;
@@ -94,42 +92,25 @@ body {
     border-right: 1px solid black;
     border-left: 1px solid black;    
 }
-#myImage { 
+#myImage {
+    display: inline-block; 
     width: 350px;
     height: 200px;
-    margin-bottom: 200px;
     margin-left: 5px;
-    border-radius: 2px;
-    z-index: 1;  
+    border-radius: 2px;  
 }
 #contact {
     display: flex;
     justify-content: start;
     margin-top: 10px;
-
 }
-.navbar {
-    position: fixed;
-    width: 100%;
-    font-family: 'Amatic SC', cursive;
-    background-color: #f2e68f !important;
-    z-index: 1;
-        li {
-        text-align: right;
-        margin-left: 5px;
-        font-family: 'Amatic SC', cursive;
-        font-size: 1.6em;
-        font-weight: 900;
-            a{
-            z-index: 2;
-        }
-    }
-}
-footer {     
+footer {  
     text-align: center;
-    left: 0px;
-    width: 100%;
-    bottom: 0px; 
+    bottom: 0; 
     color: black;
-    display: block;
+}
+#stickmansits {
+    position: absolute;
+    right: 0;
+    height: 300px;
 }

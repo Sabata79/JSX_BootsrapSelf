@@ -7,6 +7,11 @@ body {
           justify-content: center;
 }
 
+#pageOne, #pageTwo, #pageThree {
+  width: 100%;
+  height: 100vh;
+}
+
 .navbar {
   position: fixed;
   width: 100%;
@@ -80,11 +85,6 @@ body {
   background-color: #f2e68f;
 }
 
-#pageOne, #pageTwo, #pageThree {
-  width: 100%;
-  height: 100vh;
-}
-
 #cloud {
   -ms-flex-negative: 4;
       flex-shrink: 4;
@@ -96,6 +96,10 @@ body {
 #think {
   margin-left: 50px;
   width: 50%;
+}
+
+.game {
+  margin-top: 100px;
 }
 
 .accordion-item {
@@ -114,7 +118,7 @@ body {
 
 #myImage {
   display: inline-block;
-  margin-top: 150px;
+  margin-top: 100px;
   width: 350px;
   height: 200px;
   margin-left: 4px;

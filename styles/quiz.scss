@@ -47,7 +47,6 @@
     color:  black !important;
     opacity: 0.9;
 }
-
 #start {    
     max-width: 350px;  
     padding: 5px 5px;
@@ -68,7 +67,6 @@
         transform: translateY(4px);
     }
 }
-
 #submit {
     display: none;
     text-align: right;
@@ -113,8 +111,7 @@
         background-color: #ff0000;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         transform: translateY(4px);
-    }
-    
+    }    
 }    
 #containerFinal {
     display: none;

@@ -83,26 +83,21 @@ body {
     width: 358px;
     font-family:'IBM Plex Serif', serif;
     background-color: #f2e68f;
-    opacity: 0.8;
-    z-index: 1; 
+    opacity: 0.8; 
 }
 #textInsideAccordion {
     font-family:'IBM Plex Serif', serif;
     padding-left: 8px;
     border-right: 1px solid black;
-    border-left: 1px solid black;    
+    border-left: 1px solid black;   
 }
 #myImage {
-    display: inline-block; 
+    display: inline-block;
+    margin-top: 150px;  
     width: 350px;
     height: 200px;
-    margin-left: 5px;
+    margin-left: 4px;
     border-radius: 2px;  
-}
-#contact {
-    display: flex;
-    justify-content: start;
-    margin-top: 10px;
 }
 footer {  
     text-align: center;

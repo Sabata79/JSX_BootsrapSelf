@@ -103,7 +103,6 @@ body {
   font-family: 'IBM Plex Serif', serif;
   background-color: #f2e68f;
   opacity: 0.8;
-  z-index: 1;
 }
 
 #textInsideAccordion {
@@ -115,20 +114,11 @@ body {
 
 #myImage {
   display: inline-block;
+  margin-top: 150px;
   width: 350px;
   height: 200px;
-  margin-left: 5px;
+  margin-left: 4px;
   border-radius: 2px;
-}
-
-#contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  margin-top: 10px;
 }
 
 footer {

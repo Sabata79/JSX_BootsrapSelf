@@ -33,6 +33,7 @@ body {
 
 /* ~~~~~~~~~~~~ First page ~~~~~~~~~~~~ */
 #header {
+  display: relative;
   top: 0;
   left: 0;
   font-family: 'Amatic SC', cursive;
@@ -47,10 +48,10 @@ body {
 }
 
 #header p {
-  position: fixed;
+  position: absolute;
   font-size: 0.6em;
   font-weight: 900;
-  margin-left: 120px;
+  margin-left: 80px;
 }
 
 #stick {

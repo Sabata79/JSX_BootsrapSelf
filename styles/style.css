@@ -14,7 +14,6 @@ body {
   width: 100%;
   font-family: 'Amatic SC', cursive;
   background-color: transparent !important;
-  opacity: 0.8;
   z-index: 1;
 }
 
@@ -86,13 +85,13 @@ body {
   border: none;
   color: red;
   font-size: larger;
-  background-color: #f2e68f;
+  background-color: transparent;
 }
 
 #cloud {
+  margin-top: 100px;
   -ms-flex-negative: 4;
       flex-shrink: 4;
-  margin-top: 100px;
   width: 500px;
   height: auto;
 }
@@ -108,7 +107,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
   display: inline-block;
-  width: 100%;
+  width: 87%;
   height: 100vh;
   text-align: center;
   background-repeat: no-repeat;
@@ -336,7 +335,7 @@ body {
 }
 
 #accordion_bar {
-  background-color: #f2e68f;
+  background-color: transparent !important;
   color: black;
 }
 
@@ -345,8 +344,8 @@ body {
   width: 100%;
   max-width: 500px;
   font-family: 'IBM Plex Serif', serif;
-  background-color: #f2e68f;
-  opacity: 0.8;
+  font-weight: 900;
+  background-color: transparent;
 }
 
 #textInsideAccordion {
@@ -356,10 +355,15 @@ body {
   border-left: 1px solid black;
 }
 
+#textInsideAccordion a {
+  padding: 5px;
+  color: black;
+}
+
 #myWorksImageContainer {
   text-align: center;
   display: inline-block;
-  margin-top: 100px;
+  margin-top: 70px;
   margin-right: 10px;
   opacity: 0.9;
 }
@@ -369,10 +373,9 @@ body {
   font-weight: 600;
 }
 
-footer {
-  margin-top: 100px;
-  text-align: center;
-  bottom: 0;
-  color: black;
+@media screen and (max-width: 650px) {
+  #myImage {
+    margin-top: 240px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

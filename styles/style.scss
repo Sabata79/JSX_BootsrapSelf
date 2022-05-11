@@ -13,7 +13,6 @@ body {
     width: 100%;
     font-family: 'Amatic SC', cursive;
     background-color: transparent !important;
-    opacity: 0.8;
     z-index: 1;
         li {
         text-align: right;
@@ -75,12 +74,12 @@ body {
         border: none;
         color: red;
         font-size: larger;
-        background-color: #f2e68f;
+        background-color: transparent;
     }
 }
 #cloud {
-    flex-shrink: 4;
     margin-top: 100px;
+    flex-shrink: 4;
     width: 500px;
     height: auto;    
 }
@@ -96,7 +95,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
     display: inline-block;
-    width: 100%;
+    width: 87%;
     height: 100vh; 
     text-align: center;
     background-repeat: no-repeat;
@@ -272,16 +271,15 @@ body {
 
 /* ~~~~~~~~~~~~ Third page ~~~~~~~~~~~~ */
 
-#myImage {
+ #myImage{
     display: inline-block;
     margin-top: 120px;  
     width: 100%;
     max-width: 500px;
-    border-radius: 10px;
-      
+    border-radius: 10px;    
 }
 #accordion_bar {
-    background-color: #f2e68f;
+    background-color: transparent !important ;
     color: black;
 }
 .accordion-item {
@@ -289,19 +287,23 @@ body {
     width: 100%;
     max-width: 500px;
     font-family:'IBM Plex Serif', serif;
-    background-color: #f2e68f;
-    opacity: 0.8; 
+    font-weight: 900;
+    background-color: transparent; 
 }
 #textInsideAccordion {
     font-family:'IBM Plex Serif', serif;
     padding-left: 8px;
     border-right: 1px solid black;
-    border-left: 1px solid black;   
+    border-left: 1px solid black;
+    a{
+        padding: 5px;
+        color :black;
+    }   
 }
 #myWorksImageContainer {
     text-align: center;
     display: inline-block;
-    margin-top: 100px;
+    margin-top: 70px;
     margin-right: 10px;
     opacity: 0.9;
     h1 {
@@ -309,9 +311,9 @@ body {
         font-weight: 600;
     }
 }
-footer {
-    margin-top: 100px;  
-    text-align: center;
-    bottom: 0; 
-    color: black;
+
+@media screen and (max-width: 650px) {
+    #myImage {
+        margin-top: 240px;
+    }
 }

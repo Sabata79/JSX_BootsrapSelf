@@ -1,3 +1,9 @@
+/* Mixin color map*/
+
+$highlight-colour: red;
+$backgroud-color: #f2e68f;
+$buttonHover-color: #cfe694;
+
 /* ~~~~~~~~~~~~ Main ~~~~~~~~~~~~ */
 
 body {
@@ -35,7 +41,7 @@ body {
     font-weight: 900;
     text-shadow:2px 2px 8px white; 
     h1:first-letter {
-    color: red;
+    color: $highlight-colour;
     font-weight: 900;
         }
         p{
@@ -72,7 +78,7 @@ body {
     margin-left: 50px;
         button {
         border: none;
-        color: red;
+        color: $highlight-colour;
         font-size: larger;
         background-color: transparent;
     }
@@ -126,7 +132,7 @@ body {
 #picture img {
     display: inline-block;
     width: 100%;
-    border: 5px solid #f2e68f;
+    border: 5px solid $backgroud-color;
     max-height: 400px;
     max-width: 700px;
     border-radius: 15px;
@@ -135,7 +141,7 @@ body {
 }
 #counter {
     margin-top: 20px;
-    background-color: #f2e68f !important;
+    background-color: $backgroud-color;
     color:  black !important;
     opacity: 0.9;
 }
@@ -151,10 +157,10 @@ body {
     color: black; 
     border: none;
     border-radius: 15px;
-    background-color: #cfe694;
+    background-color: $buttonHover-color;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         &:hover {
-        background-color: #cfe694;
+        background-color: $buttonHover-color;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         transform: translateY(4px);
     }
@@ -175,11 +181,11 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     opacity: 0.7;
         &:hover {
-        background-color: #cfe694;
+        background-color: $buttonHover-color;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         transform: translateY(4px);
         &:active {
-        background-color: #ff0000;
+        background-color: $highlight-colour;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         transform: translateY(4px);
         }
@@ -187,7 +193,7 @@ body {
 }
 #first ,#second ,#third {
     display: none;
-    background-color: #f2e68f;
+    background-color: $backgroud-color;
     font-size: 1.2em;
     font-weight: 900;
     text-align: center;
@@ -200,12 +206,12 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     opacity: 0.7;    
         &:hover {
-        background-color: #cfe694;
+        background-color: $buttonHover-color;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         transform: translateY(4px);
         }
         &:focus {
-        background-color: #ff0000;
+        background-color: $highlight-colour;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         transform: translateY(4px);
     }    
@@ -220,7 +226,7 @@ body {
     display: none;
     width: 20%;
     height: auto;
-    border: 10px solid #f2e68f;
+    border: 10px solid $backgroud-color;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
     opacity: 0.5;
@@ -234,7 +240,7 @@ body {
 }
 #restart {
     display: none;
-    background-color: #f2e68f;
+    background-color: $backgroud-color;
     font-size: 1.2em;
     font-weight: 900;
     padding: 5px;
@@ -248,7 +254,7 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     opacity: 0.7;
         &:hover {
-        background-color: #cfe694;
+        background-color: $buttonHover-color;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         transform: translateY(4px);
     }
@@ -263,7 +269,7 @@ body {
     margin-top: 20px;
     width: 33%;
     height: auto;
-    border: 10px solid #f2e68f;
+    border: 10px solid $backgroud-color;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
     opacity: 0.7;

@@ -334,11 +334,6 @@ body {
   border-radius: 10px;
 }
 
-#accordion_bar {
-  background-color: transparent !important;
-  color: black;
-}
-
 .accordion-item {
   margin-top: 10px;
   width: 100%;
@@ -346,6 +341,11 @@ body {
   font-family: 'IBM Plex Serif', serif;
   font-weight: 900;
   background-color: transparent;
+}
+
+#accordion_bar {
+  background-color: transparent !important;
+  color: black;
 }
 
 #textInsideAccordion {

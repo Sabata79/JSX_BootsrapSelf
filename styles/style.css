@@ -13,7 +13,7 @@ body {
   position: fixed;
   width: 100%;
   font-family: 'Amatic SC', cursive;
-  background-color: #f2e68f !important;
+  background-color: transparent !important;
   opacity: 0.8;
   z-index: 1;
 }
@@ -31,7 +31,6 @@ body {
   z-index: 2;
 }
 
-/* ~~~~~~~~~~~~ First page ~~~~~~~~~~~~ */
 #header {
   display: relative;
   top: 0;
@@ -54,6 +53,7 @@ body {
   margin-left: 80px;
 }
 
+/* ~~~~~~~~~~~~ First page ~~~~~~~~~~~~ */
 #stick {
   width: 50px;
 }
@@ -356,10 +356,17 @@ body {
   border-left: 1px solid black;
 }
 
-#stickmansits {
-  position: absolute;
-  right: 0;
-  height: 300px;
+#myWorksImageContainer {
+  text-align: center;
+  display: inline-block;
+  margin-top: 100px;
+  margin-right: 10px;
+  opacity: 0.9;
+}
+
+#myWorksImageContainer h1 {
+  font-family: 'Amatic SC', cursive;
+  font-weight: 600;
 }
 
 footer {

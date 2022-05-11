@@ -12,7 +12,7 @@ body {
     position: fixed;
     width: 100%;
     font-family: 'Amatic SC', cursive;
-    background-color: #f2e68f !important;
+    background-color: transparent !important;
     opacity: 0.8;
     z-index: 1;
         li {
@@ -271,6 +271,7 @@ body {
 }
 
 /* ~~~~~~~~~~~~ Third page ~~~~~~~~~~~~ */
+
 #myImage {
     display: inline-block;
     margin-top: 120px;  
@@ -297,10 +298,16 @@ body {
     border-right: 1px solid black;
     border-left: 1px solid black;   
 }
-#stickmansits {
-    position: absolute;
-    right: 0;
-    height: 300px;
+#myWorksImageContainer {
+    text-align: center;
+    display: inline-block;
+    margin-top: 100px;
+    margin-right: 10px;
+    opacity: 0.9;
+    h1 {
+        font-family: 'Amatic SC', cursive;
+        font-weight: 600;
+    }
 }
 footer {
     margin-top: 100px;  

@@ -72,6 +72,12 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+#cloud {
+    margin-top: 100px;
+    flex-shrink: 4;
+    width: 500px;
+    height: auto;    
+}
 #firsText {
     font-family:'IBM Plex Serif', serif;
     font-size: 1.0rem;
@@ -82,12 +88,6 @@ body {
         font-size: larger;
         background-color: transparent;
     }
-}
-#cloud {
-    margin-top: 100px;
-    flex-shrink: 4;
-    width: 500px;
-    height: auto;    
 }
 #think {
     margin-left: 50px;

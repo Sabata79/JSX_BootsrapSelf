@@ -76,6 +76,14 @@ body {
           transform: translate(-50%, -50%);
 }
 
+#cloud {
+  margin-top: 100px;
+  -ms-flex-negative: 4;
+      flex-shrink: 4;
+  width: 500px;
+  height: auto;
+}
+
 #firsText {
   font-family: 'IBM Plex Serif', serif;
   font-size: 1.0rem;
@@ -87,14 +95,6 @@ body {
   color: red;
   font-size: larger;
   background-color: transparent;
-}
-
-#cloud {
-  margin-top: 100px;
-  -ms-flex-negative: 4;
-      flex-shrink: 4;
-  width: 500px;
-  height: auto;
 }
 
 #think {

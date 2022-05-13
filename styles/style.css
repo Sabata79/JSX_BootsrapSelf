@@ -71,7 +71,7 @@ body {
   font-size: 1.2rem;
   position: absolute;
   top: 55%;
-  left: 50%;
+  left: 52%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -79,9 +79,9 @@ body {
 #cloud {
   margin-top: 100px;
   left: 50%;
-  -ms-flex-negative: 4;
-      flex-shrink: 4;
-  width: 500px;
+  -ms-flex-negative: 5;
+      flex-shrink: 5;
+  max-width: 500px;
   height: auto;
 }
 
@@ -100,7 +100,7 @@ body {
 
 #think {
   margin-left: 50px;
-  width: 50%;
+  width: 90%;
 }
 
 /* ~~~~~~~~~~~~ Secod page ~~~~~~~~~~~~ */

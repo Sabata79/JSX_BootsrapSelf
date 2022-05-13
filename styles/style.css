@@ -78,6 +78,7 @@ body {
 
 #cloud {
   margin-top: 100px;
+  left: 50%;
   -ms-flex-negative: 4;
       flex-shrink: 4;
   width: 500px;

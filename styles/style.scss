@@ -66,15 +66,17 @@ body {
 .caption {
     font-family:'IBM Plex Serif', serif;
     max-width: 400px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     position: absolute;
-    top: 55%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 #cloud {
-    margin-top: 100px;
-    flex-shrink: 5;
+    display: relative;
+    width: 100%;
+    margin-top: 125px;
+    flex-shrink: 4;
     max-width: 500px;
     height: auto;    
 }
@@ -90,7 +92,7 @@ body {
     }
 }
 #think {
-    margin-left: 50px;
+    margin-left: 5px;
     width: 60%;
 }
 
@@ -321,5 +323,8 @@ body {
 @media screen and (max-width: 650px) {
     #myImage {
         margin-top: 180px;
+    }
+    .caption {
+        top:65%
     }
 }

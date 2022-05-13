@@ -80,17 +80,6 @@ body {
     max-width: 500px;
     height: auto;    
 }
-#firsText {
-    font-family:'IBM Plex Serif', serif;
-    font-size: 1.0rem;
-    margin-left: 50px;
-        button {
-        border: none;
-        color: $highlight-colour;
-        font-size: larger;
-        background-color: transparent;
-    }
-}
 #think {
     margin-left: 5px;
     width: 60%;
@@ -111,6 +100,17 @@ body {
         .game p {
         margin-top: 100px;
         margin-left: 80px;
+    }
+}
+#firsText {
+    font-family:'IBM Plex Serif', serif;
+    font-size: 1.0rem;
+    margin-left: 50px;
+        button {
+        border: none;
+        color: $highlight-colour;
+        font-size: larger;
+        background-color: transparent;
     }
 }    
 #next {
@@ -322,9 +322,14 @@ body {
 
 @media screen and (max-width: 650px) {
     #myImage {
+        max-width: 300px;
         margin-top: 180px;
     }
     .caption {
         top:65%
+    }
+    #firsText {
+        margin-left: 0px;
+        margin-right: 50px;
     }
 }

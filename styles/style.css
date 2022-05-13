@@ -67,18 +67,17 @@ body {
 
 .caption {
   font-family: 'IBM Plex Serif', serif;
-  max-width: 350px;
+  max-width: 400px;
   font-size: 1.2rem;
   position: absolute;
   top: 55%;
-  left: 52%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
 #cloud {
   margin-top: 100px;
-  left: 50%;
   -ms-flex-negative: 5;
       flex-shrink: 5;
   max-width: 500px;
@@ -100,7 +99,7 @@ body {
 
 #think {
   margin-left: 50px;
-  width: 90%;
+  width: 60%;
 }
 
 /* ~~~~~~~~~~~~ Secod page ~~~~~~~~~~~~ */
